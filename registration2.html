@@ -1,0 +1,25 @@
+{% extends'bootstrap/base.html'%}
+
+{% block titles %}
+
+
+
+    }
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1>User Registration</h1>
+</div>
+<form method="POST">
+    <input type="text" placeholder="First Name" name="First_Name">
+    <input type="text" placeholder="Last_Name" name="Last_Name">
+    <input type="text" placeholder="Email" name="Email">
+    <input type="text" placeholder="Password" name="Password">
+
+
+    <input class="btn btn-warning" type="submit" value="Register" name="Register">
+
+</form>
+
+{% endblock %}
