@@ -1,0 +1,24 @@
+{% extends'bootstrap/base.html'%}
+
+{% block titles %}
+
+
+
+    }
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1>Welcome  {{session['user-info']['firstName']}} </h1>
+</div>
+<div text-center>
+    <h3>
+    First Name : {{session['user-info']['firstName']}}
+        <br>
+        Last Name :{{session['user-info']['lastName']}}
+        <br>
+        Email :{{session['user-info']['email']}}
+    </h3>
+
+</div>
+{% endblock %}
