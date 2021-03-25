@@ -1,0 +1,29 @@
+{% extends'bootstrap/base.html'%}
+
+{% block titles %}
+
+
+
+    }
+{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    {% for message in get_flashed_messages() %}
+        <p>{{message}}</p>
+    {% endfor %}
+</div>
+
+<div class="jumbotron text-center">
+    <h1>User Login</h1>
+</div>
+
+<form method="POST">
+    <input type="text" placeholder="Email" name="Email">
+    <input type="text" placeholder="Password" name="Password">
+    <input class="btn btn-warning" type="submit" value="Login" name="Login">
+
+</form>
+
+
+{% endblock %}
